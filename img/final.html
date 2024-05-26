@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melanie Martínez</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background-color: pink;
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav {
+            background-color: lightpink;
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            margin: 0 10px;
+            transition: background-color 0.3s, color 0.3s;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #333;
+            color: #fff;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        section {
+            padding: 20px;
+            margin: 20px 0;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 800px;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid pink;
+            padding-bottom: 5px;
+        }
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+        .song-title {
+            color: #555;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        .song-title:hover {
+            color: pink;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const songTitles = document.querySelectorAll('.song-title');
+            songTitles.forEach(title => {
+                title.addEventListener('click', function() {
+                    const content = this.nextElementSibling;
+                    if (content.classList.contains('hidden')) {
+                        content.classList.remove('hidden');
+                    } else {
+                        content.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Melanie Martínez</h1>
+    </header>
+    <nav>
+        <a href="#melanie ">Melanie Martinez</a>
+        <a href="#crybaby">Cry Baby</a>
+        <a href="#k12">K-12</a>
+        <a href="#portals">`Portals</a>
+    </nav>
+    <main>
+      <section id="melanie">  
+<h2>Melanie Martinez</h2>
+<p>Es una cantante, compositora, directora y actriz estadounidense.</p>
+<p>Ganó reconocimiento en 2012 después de participar en la tercera temporada del programa de televisión "The Voice" en los Estados Unidos.</p> 
+<p>Sin embargo, es más conocida por su carrera musical, en la que combina elementos de pop alternativo, electropop y hip hop con letras que a menudo exploran temas oscuros y controvertidos.</p>
+<p>Su álbum debut, "Cry Baby", lanzado en 2015, fue muy exitoso, alcanzando el puesto número 6 en el Billboard 200. El álbum fue acompañado por una película musical que ella misma dirigió, creando un universo visual distintivo para su música.</p>
+<p>Melanie Martinez es reconocida por su estilo único y sus videos musicales elaborados, que a menudo tienen un aspecto surrealista y a veces perturbador.</p>
+<p>A lo largo de su carrera, Melanie ha generado controversia debido a la naturaleza de sus letras y videos, que a menudo abordan temas como la infancia, la sexualidad y las relaciones tóxicas. Sin embargo, también ha ganado una base de seguidores leales que aprecian su creatividad y autenticidad artística.</p>
+<img src="melanie martinez.jpg" alt="melani martinez">
+
+<section id="crybaby">
+            <h2>Cry Baby</h2>
+            <p>El álbum "Cry Baby" de Melanie Martinez es un viaje emocional a través de la infancia, la angustia adolescente y la complejidad de las relaciones.</p>
+            <p>Con un estilo que combina pop alternativo con elementos de fantasía oscura, cada canción cuenta una historia única que se entrelaza con el personaje central, Cry Baby.</p>
+            <p>Las letras profundas y a menudo crudas exploran temas como el abuso, la alienación, la autoaceptación y el empoderamiento femenino.</p> 
+            <p>La música está impregnada de sonidos caprichosos y melodías pegajosas, pero también presenta una profundidad emocional que invita a la reflexión. Con una estética visual distintiva y una narrativa coherente, "Cry Baby" se convierte en más que un álbum; es una experiencia inmersiva que resuena con los oyentes a nivel personal.</p>
+            <img src="albumcrybay.jpg" alt="Cry Baby">
+            <p>Las canciones que pertenecen a este álbum son:</p>
+            <div class="song-title">Cry Baby:</div>
+            <div class="hidden">
+                <p>La canción que da nombre al álbum establece el tono para el viaje emocional que está por venir. "Cry Baby" presenta a la protagonista, una joven sensible y vulnerable, que enfrenta desafíos y luchas en su vida.</p>
+                <img src="crybaby.jpg" alt="Cry Baby">
+            </div>
+            <div class="song-title">Dollhouse:</div>
+            <div class="hidden">
+                <p>Una canción que explora la fachada de la perfección familiar, mostrando que detrás de las puertas cerradas, hay secretos y problemas ocultos.</p>
+                <img src="dollhouse.jpg" alt="Cry Baby">
+            </div>
+            <div class="song-title">Sippy Cup:</div>
+            <div class="hidden">
+                <p>Una mirada satírica a la hipocresía adulta y las relaciones disfuncionales, usando la metáfora de un vaso con tapa de seguridad para representar la negación y la falta de comunicación.</p>
+                <img src="sippycup.jpg" alt="Cry Baby">
+            </div>
+            <div class="song-title">Carousel:</div>
+            <div class="hidden">
+                <p>Esta canción utiliza la metáfora de un carrusel para ilustrar la naturaleza cíclica de las relaciones tóxicas y la dificultad de escapar de ellas.</p>
+                <img src="carousel.jpg" alt="Cry Baby">
+            </div>
+            <div class="song-title">Alphabet Boy:</div>
+            <div class="hidden">
+                <p>Una crítica ingeniosa a la inmadurez emocional en las relaciones, con letras que comparan a un hombre con un niño que necesita aprender el abecedario emocional para madurar.</p>
+                <img src="alphabetboy.jpg" alt="Cry Baby">
+            </div>
+            <div class="song-title">Soap:</div>
+            <div class="hidden">
+                <p>Una canción sobre la dificultad de expresar tus sentimientos y secretos, representada metafóricamente como la necesidad de lavarte con jabón para limpiar tus "pecados".</p>
+                <img src="soap.jpg" alt="Cry Baby">
+            </div>
+            <div class="song-title">Training Wheels:</div>
+            <div class="hidden">
+                <p>Melanie utiliza la metáfora de las ruedas de entrenamiento de una bicicleta para hablar sobre la necesidad de apoyo y seguridad en una relación, y la dificultad de dejar ir ese apoyo cuando llega el momento de madurar.</p>
+                <img src="training.jpg" alt="Cry Baby">
+            </div>
+            <div class="song-title">Pity Party:</div>
+            <div class="hidden">
+                <p>Una canción que muestra la vulnerabilidad y la soledad de Cry Baby, quien se siente ignorada y abandonada en su propia fiesta de cumpleaños.</p>
+                <img src="pity party.jpg" alt="Cry Baby">
+            </div>
+            <div class="song-title">Tag, You're It:</div>
+            <div class="hidden">
+                <p>Una narrativa oscura sobre el secuestro de Cry Baby por parte de un lobo disfrazado de oveja, que representa el peligro y la vulnerabilidad de las mujeres jóvenes en el mundo.</p>
+                <img src="tagyoureit.jpg" alt="Cry Baby">
+            </div>
+            <div class="song-title">Milk and Cookies:</div>
+            <div class="hidden">
+                <p>Una canción que narra la venganza de Cry Baby contra el lobo, utilizando una metáfora dulce y siniestra de galletas envenenadas con leche.</p>
+                <img src="milkandcookies.jpg" alt="Cry Baby">
+            </div>
+            <div class="song-title">Pacify Her:</div>
+            <div class="hidden">
+                <p>Melanie expresa los sentimientos de celos y envidia de Cry Baby hacia otra chica que está con su interés amoroso, mostrando la lucha interna entre querer ser amada y sentirse insegura.</p>
+                <img src="pacifyher.jpg" alt="Cry Baby">
+            </div>
+            <div class="song-title">Mrs. Potato Head:</div>
+            <div class="hidden">
+                <p>Una poderosa crítica a los estándares de belleza irreales y la cirugía plástica, utilizando la metáfora de Mrs. Potato Head para ilustrar cómo la sociedad presiona a las mujeres para que se ajusten a ciertos ideales físicos.</p>
+                <img src="mrspotatohead.jpg" alt="Cry Baby">
+            </div>
+            <div class="song-title">Mad Hatter:</div>
+            <div class="hidden">
+                <p>Una canción que explora la lucha con la salud mental y la sensación de estar al borde de la locura, utilizando referencias al sombrerero loco de "Alicia en el País de las Maravillas" para transmitir una sensación de caos y desesperación.</p>
+                <img src="mad hatter.jpg" alt="Cry Baby">
+            </div>
+        </section>
+        <section id="k12">
+            <h2>K-12</h2>
+            <p>El álbum "K-12" y la película cuentan la historia de Cry Baby, el personaje principal de Melanie, y su experiencia en una escuela ficticia llamada K-12.</p>
+            <p>A través de las canciones y las escenas de la película, se abordan temas como la presión social, la conformidad, la injusticia y la lucha por la autoaceptación y la individualidad dentro de un sistema educativo opresivo.</p>
+            <img src="k12album.jpg" alt="K-12">
+            <p>Las canciones de "K-12" son:</p>
+            <div class="song-title">Wheels on the Bus:</div>
+            <div class="hidden">
+                <p>Esta canción marca el comienzo del álbum, presentando un tono oscuro y surrealista mientras Melanie canta sobre los problemas en el sistema educativo y la falta de atención a las necesidades emocionales de los estudiantes.</p>
+                <img src="wheels on the bus.jpg" alt="K-12">
+            </div>
+            <div class="song-title">Class Fight:</div>
+            <div class="hidden">
+                <p>Una narración sobre los conflictos y la violencia que ocurren en las escuelas, reflejando la presión social y la lucha por la aceptación.</p>
+                <img src="class fight.jpg" alt="K-12">
+            </div>
+            <div class="song-title">The Principal:</div>
+            <div class="hidden">
+                <p>Una crítica mordaz a la corrupción y la falta de responsabilidad de las autoridades educativas, personificada en el director de la escuela.</p>
+                <img src="the principal.jpg" alt="K-12">
+            </div>
+            <div class="song-title">Show & Tell:</div>
+            <div class="hidden">
+                <p>Explora la sensación de ser constantemente observado y juzgado, como si la vida fuera una presentación pública.</p>
+                <img src="show y tell.jpg" alt="K-12">
+            </div>
+            <div class="song-title">Nurse's Office:</div>
+            <div class="hidden">
+                <p>Una metáfora sobre buscar refugio y escape de la opresión y el maltrato, representado por la oficina de la enfermera escolar.</p>
+                <img src="nurses office.jpg" alt="K-12">
+            </div>
+            <div class="song-title">Drama Club:</div>
+            <div class="hidden">
+                <p>Melanie critica la superficialidad y el comportamiento falso, usando el club de drama como una metáfora de las interacciones sociales en la escuela.</p>
+                <img src="drama club.jpg" alt="K-12">
+            </div>
+            <div class="song-title">Strawberry Shortcake:</div>
+            <div class="hidden">
+                <p>Una reflexión sobre los estándares de belleza y las expectativas de género impuestas a las mujeres jóvenes.</p>
+                <img src="bery.jpg" alt="K-12">
+            </div>
+            <div class="song-title">Lunchbox Friends:</div>
+            <div class="hidden">
+                <p>Un comentario sobre la superficialidad de algunas amistades y la búsqueda de relaciones genuinas y significativas.</p>
+                <img src="lunchbox.jpg" alt="K-12">
+            </div>
+            <div class="song-title">Orange Juice:</div>
+            <div class="hidden">
+                <p>Una poderosa canción sobre la dismorfia corporal y los trastornos alimentarios, utilizando el jugo de naranja como una metáfora de la presión para conformarse a los ideales de belleza.</p>
+                <img src="orange juice.jpg" alt="K-12">
+            </div>
+            <div class="song-title">Detention:</div>
+            <div class="hidden">
+                <p>Melanie habla sobre sentirse atrapada y castigada por no ajustarse a las normas, utilizando la detención escolar como una metáfora.</p>
+                <img src="detention.jpg" alt="K-12">
+            </div>
+            <div class="song-title">Teacher's Pet:</div>
+            <div class="hidden">
+                <p>Una narrativa sobre el abuso de poder y la manipulación en las relaciones de autoridad, representada por la relación entre un estudiante y un profesor.</p>
+                <img src="techers.jpg" alt="K-12">
+            </div>
+            <div class="song-title">High School Sweethearts:</div>
+            <div class="hidden">
+                <p>Una canción sobre las complejidades y los desafíos de las relaciones románticas en la adolescencia.</p>
+                <img src="high school.jpg" alt="K-12">
+            </div>
+            <div class="song-title">Recess:</div>
+            <div class="hidden">
+                <p>El cierre del álbum aborda la necesidad de un respiro y tiempo para uno mismo, criticando el sistema que agota a los jóvenes.</p>
+                <img src="recess.jpg" alt="K-12">
+            </div>
+        </section>
+        <section id="portals">
+            <h2>Portals</h2>
+            <p>"Portals" es el tercer álbum de estudio de Melanie Martinez, lanzado el 31 de marzo de 2023.</p>
+            <p>Este álbum continúa explorando temas oscuros y surrealistas a través de una narrativa conceptual, como es característico del trabajo de Martinez.</p>
+            <p>Sin embargo, "Portals" se enfoca en una transformación y un renacimiento personal, utilizando metáforas de la vida, la muerte y el más allá.</p>
+            <p>El álbum sigue a Cry Baby, el alter ego de Martinez, en un viaje de transición desde la muerte hacia una nueva forma de existencia.</p>
+            <p>A través de las canciones, se exploran temas como la reencarnación, la introspección y el crecimiento personal.</p>
+            <p>Musicalmente, "Portals" mantiene la mezcla única de pop alternativo, art pop y elementos electrónicos que define el estilo de Melanie Martinez, con letras cargadas de simbolismo y una producción detallada que crea una atmósfera envolvente.</p>
+            <img src="albumportals.jpg" alt="Portals">
+            <p>Las canciones de "Portals" son:</p>
+            <div class="song-title">DEATH:</div>
+            <div class="hidden">
+                <p>El renacimiento y la transición. Trata sobre la muerte metafórica de un yo anterior y la transformación hacia una nueva identidad.</p>
+                <img src="death.jpg" alt="Portals">
+            </div>
+            <div class="song-title">VOID:</div>
+            <div class="hidden">
+                <p>Explora la sensación de vacío existencial y la búsqueda de significado en la vida.</p>
+                <img src="void.jpg" alt="Portals">
+            </div>
+            <div class="song-title">TUNNEL VISION:</div>
+            <div class="hidden">
+                <p>Una crítica a la mentalidad cerrada y la falta de perspectiva en la sociedad.</p>
+                <img src="tunnel vision.jpg" alt="Portals">
+            </div>
+            <div class="song-title">FAERIE SOIRÉE:</div>
+            <div class="hidden">
+                <p>Una fantasía oscura que mezcla elementos de cuento de hadas con una narrativa introspectiva.</p>
+                <img src="faerie.jpg" alt="Portals">
+            </div>
+            <div class="song-title">LIGHT SHOWER:</div>
+            <div class="hidden">
+                <p>Una metáfora de la purificación y el renacimiento a través de la luz.</p>
+                <img src="light shower.jpg" alt="Portals">
+            </div>
+            <div class="song-title">SPIDER WEB:</div>
+            <div class="hidden">
+                <p>Explora la idea de estar atrapado en una red de mentiras y manipulaciones.</p>
+                <img src="spider web.jpg" alt="Portals">
+            </div>
+            <div class="song-title">LEECHES:</div>
+            <div class="hidden">
+                <p>Una canción sobre las personas que se aprovechan de los demás, drenando su energía y vitalidad.</p>
+                <img src="leeches.jpg" alt="Portals">
+            </div>
+            <div class="song-title">BATTLE OF THE LARYNX:</div>
+            <div class="hidden">
+                <p>Una metáfora de la lucha por encontrar y usar la propia voz en un mundo que intenta silenciarte.</p>
+                <img src="battle.jpg" alt="Portals">
+            </div>
+            <div class="song-title">THE CONTORTIONIST:</div>
+            <div class="hidden">
+                <p>Una reflexión sobre la flexibilidad y la adaptación, y cómo estas cualidades pueden ser tanto una fortaleza como una trampa.</p>
+                <img src="THE CONTORTIONIST.jpg" alt="Portals">
+            </div>
+            <div class="song-title">MOON CYCLE:</div>
+            <div class="hidden">
+                <p>Utiliza las fases de la luna como metáfora del cambio y la evolución personal.</p>
+                <img src="MOON CYCLE.jpg" alt="Portals">
+            </div>
+            <div class="song-title">NYMPHOLOGY:</div>
+            <div class="hidden">
+                <p>Una exploración de la identidad y el poder, utilizando la mitología de las ninfas.</p>
+                <img src="nymphology.jpg" alt="Portals">
+            </div>
+            <div class="song-title">EVIL:</div>
+            <div class="hidden">
+                <p>Trata sobre confrontar y superar la maldad y la negatividad, tanto interna como externa.</p>
+                <img src="evil.jpg" alt="Portals">
+            </div>
+            <div class="song-title">WOMB:</div>
+            <div class="hidden">
+                <p>Reflexiona sobre el origen y el renacimiento, cerrando el ciclo temático del álbum.</p>
+                <img src="womb.jpg" alt="Portals">
+            </div>
+        </section>
+    </main>
+</body>
+</html>
